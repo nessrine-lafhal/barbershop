@@ -1,0 +1,89 @@
+/* Footer */
+
+.footer-container {
+    padding: 15px 15px 5px 15px;
+    color: #ffffff;
+}
+
+.footer-bg-color {
+    background: #6e6a6a;
+}
+
+.footer-heading {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-section-margin {
+    margin-bottom: 16px;
+}
+
+/* Details and Get In Touch */
+
+.details-list {
+    list-style-type: none;
+}
+
+.details-list-item {
+    margin-bottom: 12px;
+}
+
+.footer-details-styling {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-heading-link-styling {
+    color: #ffffff;
+}
+
+/* Hover and Focus */
+
+.footer-heading-link-styling:hover,
+.social-links-item:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer-heading-link-styling:focus {
+    padding: 5px;
+    background-color: #504e4e;
+    color: #6e6a6a;
+    border-radius: 4px;
+    outline: none
+}
+
+.social-links-item:focus {
+    background-color: #6e6a6a;
+    color: #504e4e;
+    border-radius: 4px;
+    outline: none
+}
+
+/* Social */
+
+.footer-heading-social {
+    text-align: center;
+}
+
+.social-links-item {
+    padding: 0 10px;
+    font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Copyright */
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-container-text-margin {
+    margin-bottom: 0;   
+}

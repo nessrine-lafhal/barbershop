@@ -1,0 +1,318 @@
+/* Misc */
+
+.book-container {
+    margin: 40px auto 40px;
+}
+
+.book-heading {
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+.label-heading {
+    color: #212529;
+    text-transform: uppercase;
+}
+
+/* Tabs */
+
+.nav-tab {
+    color: #212529;
+    align-items: center;
+}
+
+.required-input {
+    vertical-align: top;
+    color: #ff0000;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+/* Box */
+
+.box-container {
+    width: 100%;
+    background-color: #6e6a6a;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, .5);
+}
+
+.box {
+    margin-bottom: 16px;
+    padding: 15px;
+    border: none;
+}
+
+.box-content {
+    font-size: 16px;
+}
+
+.box-align {
+    align-items: center;
+}
+
+.box-content-heading {
+    text-align: start;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.box-content-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Checkbox */
+
+.checkbox-field-default {
+    width: 1px;
+    height: 1px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.checkbox-field-custom::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+	border: 1px solid #eeeeee;
+	border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+	content: "";
+    color: #504e4e;
+}
+
+.checkbox-field-default:checked + .checkbox-field-custom::before {
+    content: "\2714";
+    font-weight: 600;
+    background-color: #eeeeee;
+}
+
+/* Radio button */
+
+.radio-field-default {
+    width: 1px;
+    height: 1px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.radio-field-custom::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+	border: 1px solid #eeeeee;
+	border-radius: 50%;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+	content: "";
+    color: #504e4e;
+}
+
+.radio-field-default:checked + .radio-field-custom::before {
+    content: "\2714";
+    font-weight: 600;
+    background-color: #eeeeee;
+}
+
+/* Buttons */
+
+.btn {
+    color: #eeeeee;
+}
+
+.btn-submit {
+    margin-bottom: 16px;
+    background: #6e6a6a;
+}
+
+/* Read More */
+
+.read-more-container {
+    margin-bottom: 10px;
+    text-align: end;
+}
+
+.read-more-btn {
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #504e4e;
+}
+
+.collapse-content-container {
+    margin-top: 5px;
+    border-top: 1px solid #e0dede;
+}
+
+.collapse-content {
+    margin-top: 10px;
+    color: #eeeeee;
+}
+
+.collapse-content-text {
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Icon and Image */
+
+.icon-container {
+    padding-right: 35px;
+    padding-top: 5px;
+    text-align: end;
+}
+
+.barber-img {
+    height: 100px;
+    width: 100px;
+    text-align: end;
+}
+
+/* Time Tab */
+
+.label-heading-date {
+    display: block;
+}
+
+#date {
+    border-radius: 4px;
+}
+
+.time-list {
+    display: inline-block;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.time-list-item {
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+.time-label {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #eeeeee;
+    background: #504e4e;
+    letter-spacing: 1px;
+}
+
+.time-input:checked + .time-label {
+    color: #504e4e;
+    background: #eeeeee;
+    border: 1px solid #212529;
+}
+
+.time-input {
+    margin: 0;
+    width: 1px;
+    height: 1px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* Service Cancel */
+
+.service-cancel-policy {
+    font-size: 16px;
+    border-top: 1px solid #e0dede;
+}
+
+.service-cancel-policy-heading {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Block */
+.sm-block {
+    display: none;
+}
+
+/* Hover and Focus */
+
+.nav-tab:hover, 
+.nav-tab:focus {
+    color: #eeeeee;
+    background-color: #6e6a6a;
+    outline: none; 
+}
+
+.checkbox-field-default:focus + .checkbox-field-custom::before {
+    outline: none;
+    box-shadow: 0 0 0 3px #eeeeee;
+}
+
+.radio-field-default:focus + .radio-field-custom::before {
+    outline: none;
+    box-shadow: 0 0 0 3px #eeeeee;
+}
+
+.read-more-btn:hover, 
+.read-more-btn:focus {
+    color: #212529;
+    box-shadow: 0 0 0 1px #212529;
+}
+
+.btn-submit:hover, 
+.btn-submit:focus {
+    color: #212529;
+    background-color: #504e4e;
+    box-shadow: 0 0 0 1px #212529;
+}
+
+.time-label:hover {
+    color: #504e4e;
+    background: #6e6a6a;
+    outline: none;
+    box-shadow: 0 0 0 1px #212529;
+}
+
+.time-input:focus {
+    color: #504e4e;
+    background: #6e6a6a;
+    outline: none;
+    box-shadow: 0 0 0 1px #212529;
+}
+
+/* Media Queries */
+
+@media(min-width: 769px) {
+    .booking-container {
+        margin: 80px auto 90px;
+    }
+
+    .nav-tab {
+        padding: 8px 90px 8px;
+    }
+
+    .box-container {
+        margin-left: 20px;
+    }
+
+    .sm-block {
+        display: inline;
+    }
+}

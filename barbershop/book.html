@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/7e899f220f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/default.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/header.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/book.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
+        <title>Book | Harrison Cuts</title>
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-dark navbar-bg-color navbar-expand-sm">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo-icon" src="assets/images/svg/logo/gentleman-edited.svg" alt="Logo">
+                    <div class="logo-text">Harrison Cuts</div>
+                </a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarDropdownMenu" aria-controls="navbarDropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarDropdownMenu">
+                    <ul class="navbar-nav ml-auto" id="mainNav">
+                        <li class="nav-item main-nav-item ml-2">
+                            <a class="nav-link main-nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item main-nav-item active ml-2">
+                            <a class="nav-link main-nav-link" href="book.html">Book</a>
+                        </li>
+                        <li class="nav-item main-nav-item ml-2">
+                            <a class="nav-link main-nav-link" href="service.html">Service</a>
+                        </li>
+                        <li class="nav-item main-nav-item ml-2">
+                            <a class="nav-link main-nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Section: Book -->
+        <section>
+            <div class="container book-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 offset-md-1">
+                        <!-- Tabs -->
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link nav-tab" id="nav-service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="nav-service-tab" aria-selected="true">Service</a>
+                            <a class="nav-item nav-link nav-tab" id="nav-barber-tab" data-toggle="tab" href="#barber" role="tab" aria-controls="nav-barber-tab" aria-selected="false">Barber</a>
+                            <a class="nav-item nav-link nav-tab" id="nav-time-tab" data-toggle="tab" href="#time" role="tab" aria-controls="nav-time-tab" aria-selected="false">Time</a>
+                            <a class="nav-item nav-link nav-tab" id="nav-client-tab" data-toggle="tab" href="#client" role="tab" aria-controls="nav-client-tab" aria-selected="false">Client</a>
+                        </div>
+                        <!-- Form: Book -->
+                        <form action="" method="post">
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- Service Tab -->
+                                <div id="service" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-service-tab">
+                                    <h3 class="book-heading"><span class="sm-block"><i class="fas fa-cut sm-block"></i> </span>Select A Service:   <span class="required-input">*</span></h3>
+                                    <!-- Important Div for checkbox checking: Start -->
+                                    <!-- See the JS at the bottom -->
+                                    <div class="form-group checkbox-group row required">
+                                        <input type="radio" name="servicesSelected" id="servicesSelected" required style="display: none;">
+                                    <!-- Important Div for checkbox checking: End -->
+                                        <!-- Each checkbox option is held within their own separate box-container -->
+                                        <div class="col-sm-12 col-md-10">
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxOne" value="optionOne">
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxOne"><span class="box-content-label">Haircut</span></label>
+                                                            </div>
+                                                            <!-- Button that expands to reveal more information for the option -->
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemOne" href="#serviceItemOne">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Collapsible additional information about the option -->
+                                                        <div class="collapse collapse-content-container" id="serviceItemOne" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">Using traditional barbering methods to tailor the client's desired look.</p>
+                                                                <p class="collapse-content-text">Cost: $40</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxTwo" value="optionTwo"> 
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxTwo"><span class="box-content-label">Clean Head Shave</span></label>
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemTwo" href="#serviceItemTwo">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="serviceItemTwo" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">We start with a hot towel wrap and Pre-Shave Oil. Then we go over the grain of the scalp with a straight razor. Finishing with a chilled towel wrap and a Premium After Shave Lotion.</p>
+                                                                <p class="collapse-content-text">Cost: $40</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxThree" value="optionThree">  
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxThree"><span class="box-content-label">Beard Trim</span></label>
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemThree" href="#serviceItemThree">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="serviceItemThree" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">Trimming the beard to the client's desired length with a razor knife.</p>
+                                                                <p class="collapse-content-text">Cost: $40</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxFour" value="optionFour"> 
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxFour"><span class="box-content-label">Line Up Beard</span></label> 
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemFour" href="#serviceItemFour">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="serviceItemFour" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">Shaving the beard lines with a knife, helping you put those lines in just the right place.</p>
+                                                                <p class="collapse-content-text">Cost: $20</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxFive" value="optionFive"> 
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxFive"><span class="box-content-label">Face Shave</span></label> 
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemFive" href="#serviceItemFive">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="serviceItemFive" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">We start with a hot towel wrap and pre-shave oil. Following this we go over the grain, removing any stubble, with a straight razor. And finish with a chilled towel wrap and a premium After-Shave lotion.</p>
+                                                                <p class="collapse-content-text">Cost: $40</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input checkbox-field-default" type="checkbox" name="serviceCheckboxes" id="serviceCheckboxSix" value="optionSix"> 
+                                                                <label class="form-check-label box-content-heading checkbox-field-custom" for="serviceCheckboxSix"><span class="box-content-label">Haircut + Beard Trim</span></label> 
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="serviceItemSix" href="#serviceItemSix">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="serviceItemSix" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <p class="collapse-content-text">Using traditional barbering methods to tailor the clients desired look, groomed with all premium hair and beard products.</p>
+                                                                <p class="collapse-content-text">Cost: $80</p>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Barber Tab -->
+                                <div id="barber" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-barber-tab">
+                                    <h3 class="book-heading"><span class="sm-block"><i class="fas fa-users sm-block"></i> </span>Select A Barber:   <span class="required-input">*</span></h3>
+                                    <div class="form-group row">
+                                        <!-- Each radio option is held within their own separate box-container -->
+                                        <div class="col-sm-12 col-md-10">
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-6">
+                                                                <input class="form-check-input radio-field-default" type="radio" name="barberRadios" id="barberRadioOne" value="optionOne" required>
+                                                                <label class="form-check-label box-content-heading radio-field-custom" for="barberRadioOne"><span class="box-content-label">Anyone</span></label>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="icon-container">
+                                                                    <i class="fas fa-user fa-2x"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input radio-field-default" type="radio" name="barberRadios" id="barberRadioTwo" value="optionTwo">
+                                                                <label class="form-check-label box-content-heading radio-field-custom" for="barberRadioTwo"><span class="box-content-label">Simon</span></label>
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="barberItemTwo" href="#barberItemTwo">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="barberItemTwo" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-9">
+                                                                        <p class="collapse-content-text">
+                                                                            Simon is a Master Barber with 14 years of experience. Trained in the old-fashioned style of hair cutting, Simon has dedicated the last decade towards his absolute passion, the art of Men's grooming.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-1 d-none d-md-block">
+                                                                        <img src="assets/images/barber-images/petr-sevcovic-auCjz0gucr0-unsplash.jpg" class="rounded-circle barber-img" alt="Image of Simon">
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input radio-field-default" type="radio" name="barberRadios" id="barberRadioThree" value="optionThree">  
+                                                                <label class="form-check-label box-content-heading radio-field-custom" for="barberRadioThree"><span class="box-content-label">Bart</span></label>
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="barberItemThree" href="#barberItemThree">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="barberItemThree" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-9">
+                                                                        <p class="collapse-content-text">
+                                                                            Since Bart was ten he loved playing around with scissors and cutting his friend's hair. He realized it was worth getting into trouble over, he must really love it. As Chris grew so did his passion, leading to a 5-year career with Regis where he honed many of his skills.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-1 d-none d-md-block">
+                                                                        <img src="assets/images/barber-images/julian-wan-WNoLnJo7tS8-unsplash.jpg" class="rounded-circle barber-img" alt="Image of Bart">
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input radio-field-default" type="radio" name="barberRadios" id="barberRadioFour" value="optionFour">
+                                                                <label class="form-check-label box-content-heading radio-field-custom" for="barberRadioFour"><span class="box-content-label">Eugene</span></label>  
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="barberItemFour" href="#barberItemFour">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="barberItemFour" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-9">
+                                                                        <p class="collapse-content-text">
+                                                                            In 1999 after receiving a Master Cosmetology license, Eugene packed up his things and headed to Atlanta, Georgia to expand his experience and hone his skills. Eugene's love for fashion and travel has carved him into a well-rounded chameleon with an edgy dash of humor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-1 d-none d-md-block">
+                                                                        <img src="assets/images/barber-images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" class="rounded-circle barber-img" alt="Image of Eugene">
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="form-check box-container">
+                                                <div class="box">
+                                                    <div class="box-content">
+                                                        <div class="row box-align">
+                                                            <div class="col-8 col-md-6">
+                                                                <input class="form-check-input radio-field-default" type="radio" name="barberRadios" id="barberRadioFive" value="optionFive">
+                                                                <label class="form-check-label box-content-heading radio-field-custom" for="barberRadioFive"><span class="box-content-label">Mike</span></label>
+                                                            </div>
+                                                            <div class="col-2 col-md-6">
+                                                                <div class="read-more-container">
+                                                                    <a class="btn read-more-btn" data-toggle="collapse" aria-expanded="false" aria-controls="barberItemFive" href="#barberItemFive">
+                                                                        Read More
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse collapse-content-container" id="barberItemFive" aria-expanded="false">
+                                                            <div class="collapse-content">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-9">
+                                                                        <p class="collapse-content-text">
+                                                                            A trained Barber with a back ground in Fashion and Art, Mike is a firm believer in the trans-formative power of a good haircut. His attention to detail and ability to connect with his clients while delivering their desired cuts make it seem like he is reading their mind.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-1 d-none d-md-block">
+                                                                        <img src="assets/images/barber-images/cobro-JDJIDtZNJsM-unsplash.jpg" class="rounded-circle barber-img" alt="Image of Mike">
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Time Tab -->
+                                <div id="time" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-time-tab">
+                                    <h3 class="book-heading"><span class="sm-block"><i class="fas fa-calendar-alt sm-block"></i> </span>Select A Time:</h3>
+                                    <!-- Date Picker -->
+                                    <div class="form-group">
+                                        <label for="date" class="label-heading label-heading-date">Date:   <span class="required-input">*</span></label>
+                                        <input type="date" id="date" name="date" min="2020-01-01" max="2020-12-31" class="date-select" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label-heading">Time:   <span class="required-input">*</span></label>
+                                        <!-- Radio Button to select a time -->
+                                        <!-- Idea for the button list came from this StackOverflow thread - https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
+                                        <ul class="time-list">
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioOne" value="optionOne" required>
+                                                <label class="form-check-label time-label" for="timeRadioOne">10:00 - 10:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioTwo" value="optionTwo">
+                                                <label class="form-check-label time-label" for="timeRadioTwo">10:30 - 11:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioThree" value="optionThree">
+                                                <label class="form-check-label time-label" for="timeRadioThree">11:00 - 11:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioFour" value="optionFour">
+                                                <label class="form-check-label time-label" for="timeRadioFour">11:30 - 12:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioFive" value="optionFive">
+                                                <label class="form-check-label time-label" for="timeRadioFive">12:00 - 12:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioSix" value="optionSix">
+                                                <label class="form-check-label time-label" for="timeRadioSix">12:30 - 13:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioSeven" value="optionSeven">
+                                                <label class="form-check-label time-label" for="timeRadioSeven">13:00 - 13:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioEight" value="optionEight">
+                                                <label class="form-check-label time-label" for="timeRadioEight">13:30 - 14:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioNine" value="optionNine">
+                                                <label class="form-check-label time-label" for="timeRadioNine">14:00 - 14:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioTen" value="optionTen">
+                                                <label class="form-check-label time-label" for="timeRadioTen">14:30 - 15:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioEleven" value="optionEleven">
+                                                <label class="form-check-label time-label" for="timeRadioEleven">15:00 - 15:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioTwelve" value="optionTwelve">
+                                                <label class="form-check-label time-label" for="timeRadioTwelve">15:30 - 16:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioThirteen" value="optionThirteen">
+                                                <label class="form-check-label time-label" for="timeRadioThirteen">16:00 - 16:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioFourteen" value="optionFourteen">
+                                                <label class="form-check-label time-label" for="timeRadioFourteen">16:30 - 17:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioFifteen" value="optionFifteen">
+                                                <label class="form-check-label time-label" for="timeRadioFifteen">17:00 - 17:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioSixteen" value="optionSixteen">
+                                                <label class="form-check-label time-label" for="timeRadioSixteen">17:30 - 18:00</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioSeventeen" value="optionSeventeen">
+                                                <label class="form-check-label time-label" for="timeRadioSeventeen">18:00 - 18:30</label>
+                                            </li>
+                                            <li class="form-check time-list-item">
+                                                <input class="form-check-input time-input radio-field-default" type="radio" name="timeRadios" id="timeRadioEighteen" value="optionEighteen">
+                                                <label class="form-check-label time-label" for="timeRadioEighteen">18:30 - 19:00</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Client Tab -->
+                                <div id="client" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-client-tab">
+                                    <!-- Form inside the main form -->
+                                    <h3 class="book-heading"><span class="sm-block"><i class="fas fa-info-circle sm-block"></i> </span>Client Information</h3>
+                                    <div class="form-group">
+                                        <label for="fullName" class="label-heading">Full Name   <span class="required-input">*</span></label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phoneNumber" class="label-heading">Phone Number <span class="required-input">*</span></label>
+                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailAddress" class="label-heading">Email address   <span class="required-input">*</span></label>
+                                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress" placeholder="Enter your email address" required>
+                                        <small id="emailAddress" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="textarea" class="label-heading">Additional Information</label>
+                                        <textarea class="form-control" id="textarea" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" id="submitButton" class="btn btn-submit">Submit</button>
+                            </div>
+                        </form>
+                        <div class="service-cancel-policy">
+                            <h2 class="service-cancel-policy-heading">Late cancellation policy</h2>
+                            <p>
+                                We ask that any cancellation be notified to the barbershop at least 24 hours before the appointment. If you do cancel within 24 hours of your appointment you’ll be asked to pay for the service that was booked.                        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid footer-container footer-bg-color">
+            <div class="row">
+                <!-- Footer: Details about the establishment -->
+                <div class="col-sm-5 footer-section-margin">
+                    <h4 class="footer-heading">Details</h4>
+                    <ul class="details-list">
+                        <li class="details-list-item">Address: <span class="footer-details-styling">408 Williams Street, Depew, NY USA</span></li>
+                        <li class="details-list-item">Phone: <span class="footer-details-styling">555-846-8491</span></li>
+                        <li class="details-list-item">Email: <span class="footer-details-styling">harrison.cuts@business.com</span></li>
+                    </ul>
+                </div>
+                <!-- Footer: Supplementary pages -->
+                <div class="col-sm-2 footer-section-margin">
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <a href="customerSupport.html" class="footer-heading-link-styling">Customer Support</a>
+                    <br>
+                    <a href="contact.html" class="footer-heading-link-styling">Contact Us</a>
+                    <br>
+                    <a href="join.html" class="footer-heading-link-styling">Join Us</a>
+                </div>
+                <!-- Footer: Social media links -->
+                <div class="col-sm-5">
+                    <h4 class="footer-heading footer-heading-social">Social</h4>
+                    <ul class="list-inline social-links text-center">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-links-item">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-links-item">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-links-item">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="social-links-item">
+                                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer: Copyright -->
+            <div class="row">
+                <div class="col">
+                    <p class="copyright footer-container-text-margin">
+                        Copyright © 2020 Harrison Cuts. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Custom script to check if the checkbox field in the Service Tab has been checked -->
+        <!-- JS written by an acquaintance of mine -->
+        <script>
+            $(".checkbox-field-default").on('change', function() {
+                let selected = $('div.checkbox-group.required :checkbox:checked').length > 0;
+                $("#servicesSelected").prop("checked", selected);
+            });
+        </script>
+    </body>
+</html>
